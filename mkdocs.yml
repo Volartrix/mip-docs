@@ -4,11 +4,41 @@ theme:
   palette:
     primary: 'indigo'
     accent: 'deep-purple'
+    scheme: slate
   font:
     text: 'Roboto'
-    code: 'Source Code Pro'
+    code: Fira Code
+  features:
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - navigation.top
+  logo: assets/logo.png
+  favicon: assets/logo.png
 markdown_extensions:
-  - toc:
-      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   - tables
+  - footnotes
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+copyright: Copyright &copy; 2024 - 2024 NotNekodev
