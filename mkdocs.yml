@@ -1,0 +1,14 @@
+site_name: Made In Python
+theme:
+  name: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'deep-purple'
+  font:
+    text: 'Roboto'
+    code: 'Source Code Pro'
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
